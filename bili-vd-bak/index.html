@@ -11,9 +11,9 @@ var xrzurl= {
 };
 function GetQueryString(name)
 {
-     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-     var r = window.location.search.substr(1).match(reg);
-     if(r!=null)return  unescape(r[2]); return null;
+     var zsygfzcfdbzreg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var zsygfzcfdbzr = window.location.search.substr(1).match(zsygfzcfdbzreg);
+     if(zsygfzcfdbzr!=null)return  unescape(zsygfzcfdbzr[2]); return null;
 }
 var remote=GetQueryString("r");
 if(remote !=null && remote.toString().length>1)
