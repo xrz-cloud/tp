@@ -1,2 +1,50 @@
 <!-- <script language="javascript"> location.replace(" https://xrzyun.coding.net/s/51cff106-8b8e-42fc-88f8-736db71f2dd4 ") </script> -->
-<script language="javascript"> location.replace(" https://xrzyun.coding.net/public/xrz-video/bili-vd-bak.wiki/git/files ") </script>
+<!-- <script language="javascript"> location.replace(" https://xrzyun.coding.net/public/xrz-video/bili-vd-bak.wiki/git/files ") </script> -->
+<script>
+var xrzurl= {
+    "url1":"https://xrzyun.coding.net/public/xrz-video/bili-vd-bak.wiki/git/files"
+    "url2":"https://github.com/xrz-cloud/bili-vd-bak/tree/wiki"
+    "url3":"https://github.com/xrz-cloud/bili-vd-bak/releases"
+    "url4":"https://gitee.com/xrz-cloud/bili-vd-bak/tree/wiki/"
+    "url5":"https://xrzyun.coding.net/s/51cff106-8b8e-42fc-88f8-736db71f2dd4"
+    "url6":"https://gitee.com/xrz-cloud/bili-vd-bak/wikis"
+};
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+var remote=GetQueryString("r");
+if(remote !=null && remote.toString().length>1)
+{
+    if(remote == "coding")
+    {
+        window.location.href=xrzurl.url1
+    }
+    if(remote == "gh")
+    {
+        window.location.href=xrzurl.url2
+    }
+    if(remote == "ghr")
+    {
+        window.location.href=xrzurl.url3
+    }
+    if(remote == "gitee")
+    {
+        window.location.href=xrzurl.url4
+    }
+    if(remote == "coding-wiki")
+    {
+        window.location.href=xrzurl.url5
+    }
+    if(remote == "gitee-wiki")
+    {
+        window.location.href=xrzurl.url6
+    }
+}
+else
+{
+window.location.href="https://www.xrzyun.top";
+}
+</script>
